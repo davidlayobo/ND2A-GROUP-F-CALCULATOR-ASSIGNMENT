@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator & Student Registry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ND2A GROUP F CALCULATOR ASSIGNMENT</h1>
+    
+    <div class="container">
+        <div class="calculator">
+            <h2>Calculator</h2>
+            <input type="text" class="display" id="display" readonly value="0">
+            <div class="buttons">
+                <button class="clear" onclick="clearDisplay()">C</button>
+                <button class="operator" onclick="appendToDisplay('/')">/</button>
+                <button class="operator" onclick="appendToDisplay('*')">×</button>
+                
+                <button class="number" onclick="appendToDisplay('7')">7</button>
+                <button class="number" onclick="appendToDisplay('8')">8</button>
+                <button class="number" onclick="appendToDisplay('9')">9</button>
+                <button class="operator" onclick="appendToDisplay('-')">-</button>
+                
+                <button class="number" onclick="appendToDisplay('4')">4</button>
+                <button class="number" onclick="appendToDisplay('5')">5</button>
+                <button class="number" onclick="appendToDisplay('6')">6</button>
+                <button class="operator" onclick="appendToDisplay('+')">+</button>
+                
+                <button class="number" onclick="appendToDisplay('1')">1</button>
+                <button class="number" onclick="appendToDisplay('2')">2</button>
+                <button class="number" onclick="appendToDisplay('3')">3</button>
+                <button class="equals" onclick="calculate()" style="grid-row: span 2;">=</button>
+                
+                <button class="number" onclick="appendToDisplay('0')" style="grid-column: span 2;">0</button>
+                <button class="number" onclick="appendToDisplay('.')">.</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="student-section">
+        <h2>Student Registration Records</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Reg Number</th>
+                    <th>Remark</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>JOSHUA BELLO KOLAWOLE</td>
+                    <td>ND/COM/23/0069</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>MUHAMMAD YAHAYA IMAM</td>
+                    <td>ND/COM/23/0080</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HENRY IKHANOSIME OKOGIE</td>
+                    <td>ND/COM/23/OO41</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ISMAIL ISHA IBRAHIM</td>
+                    <td>ND/COM/23/0066</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ALIYU ISAH MUAHHAMD</td>
+                    <td>ND/COM/23/0081</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>KABIR YAHAYA USAINI</td>
+                    <td>ND/COM/23/0129</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ABUBAKAR MUHAMMAD SANI</td>
+                    <td>ND/COM/23/0083</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>SADIQ SALISU SUNUSI</td>
+                    <td>ND/COM/23/0167</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HUSSAIN MUKTAR ADAM</td>
+                    <td>ND/COM/23/0240</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>MUHAMMAD ABBA</td>
+                    <td>ND/COM/23/0231</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>MUSA ADAM BINUWA</td>
+                    <td>ND/COM/23/0001</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

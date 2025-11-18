@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.calculator {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 350px;
+}
+
+.calculator h2 {
+  color: #667eea;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.display {
+  width: 100%;
+  height: 60px;
+  background: #f0f0f0;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  font-size: 24px;
+  text-align: right;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.number,
+.operator {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.number:hover,
+.operator:hover {
+  background: #d0d0d0;
+}
+
+.operator {
+  background: #667eea;
+  color: white;
+}
+
+.operator:hover {
+  background: #5568d3;
+}
+
+.equals {
+  background: #4caf50;
+  color: white;
+  grid-column: span 2;
+}
+
+.equals:hover {
+  background: #45a049;
+}
+
+.clear {
+  background: #f44336;
+  color: white;
+  grid-column: span 2;
+}
+
+.clear:hover {
+  background: #da190b;
+}
+
+.student-section {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 800px;
+}
+
+.student-section h2 {
+  color: #667eea;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #667eea;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tr:hover {
+  background: #f5f5f5;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tr:nth-child(even):hover {
+  background: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .calculator {
+    width: 100%;
+    max-width: 350px;
+  }
+}
